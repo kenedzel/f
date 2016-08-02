@@ -20,12 +20,13 @@ h4 {
 body {
     position: relative;
     /*bootstrap fixed header fixes*/
-    padding-top: 50px !important;
+    margin-top: 50px !important;
 }
 
 section {
-    float: left;
+    /*float: left;*/
     font-family: "PT Sans Caption", sans-serif !important;
+    padding: 40px !important;
 }
 
 nav {
@@ -62,25 +63,14 @@ footer {
     color: #fff;
 }
 
-/*ul {
-  padding:0 0 0 0;
-  margin:0 0 0 0;
-}
-ul li {
-  list-style:none;
-  margin-bottom:25px;
-}
-ul li img {
-  cursor: pointer;
-}*/
 ul#menu li {
     display: inline;
-    padding-right: 35px;
+    /*padding-right: 35px;*/
 }
 
 ul#menu2 li {
     display: inline;
-    padding-right: 23px;
+    /*padding-right: 23px;*/
     font-family: "PT Sans Caption" !important;
 }
 
@@ -185,7 +175,6 @@ ul#menu2 li {
 .bgwhite {
     background: #fff;
     color: #ed8437;
-    height: 100%;
 }
 
 .hal {
@@ -198,14 +187,6 @@ ul#menu2 li {
 
 .font-orange {
     color: #ed8437;
-}
-
-.footer-to-left {
-    margin-left: 35px;
-}
-
-.footer-to-right {
-    margin-right: 35px;
 }
 
 .font-white {
@@ -221,59 +202,155 @@ ul#menu2 li {
     padding-left: 25px;
 }
 
+/*navbar fixes*/
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/*navbar custom properties*/
+.navbar-custom {
+    background: #fff !important;
+}
+
+/*end of navbar fixes */
+
 #section1 {
-    padding-top: 50px;
-    height: 100%;
     color: #fff;
-    background-image: url('../images/slider_img.png');
-    background-size: 100%
+    /*background: url('../images/slider_img.png') no-repeat center 100% scroll;*/
+    background: url('../images/slider_img.png') center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #section2 {
-    padding-top: 20px;
-    height: 50%;
     color: #ed8437;
     background-image: url('../images/background_pattern.png');
 }
 
 #section3 {
-    margin: auto;
-    height: 50%;
+    margin: 0 auto;
     color: #fff;
-    /*	  	background-color: #ff9800;*/
+    padding: 0px !important;
+}
+
+#section3 > .row > div {
+    padding: 20 50px;
 }
 
 #section4 {
-    padding-top: 30px;
-    height: 40%;
     color: #fff;
     background-color: #171737;
 }
 
 #section5 {
-    padding-top: 30px;
-    height: 40%;
     color: #fff;
     background-image: url('../images/background_pattern.png');
 }
 
 #section6 {
-    padding-top: 30px;
-    height: 60%;
     color: #fff;
     background-color: #fff;
 }
 
 #section7 {
-    padding-top: 50px;
-    height: 100%;
     color: #fff;
     background-image: url('../images/background_pattern.png');
 }
 
 #section8 {
-    padding-top: 30px;
-    height: 90%;
     color: #fff;
     background-color: #fff;
+}
+
+/* SECTION MEDIA FIXES */
+@media (min-width: 768px) and (min-height: 900px) {
+    #section1 {
+        height: 10%;
+        padding-top: 100px;
+    }
+}
+
+/* SECTION MEDIA FIXES */
+@media (min-width: 768px) {
+    #section1 {
+        height: 100%;
+        padding-top: 50px;
+    }
+    #section1 > .mcap_year {
+        /*color: #fff !important;*/
+        font-size: 70px;
+    }
+    #section1 > .li-platforms {
+        font-size: 15px;
+    }
+    #section1 > .foot-text {
+        width: 700px;
+        margin: 0 auto;
+    }
+    #section2 > div.container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    #section1 {
+        max-height: inherit;
+    }
+    #section1 > .mcap_year {
+        /*color: #fff !important;*/
+        font-size: 40px;
+    }
+    #section1 > .li-platforms {
+        font-size: 13px;
+    }
+}
+
+.navbar-custom-footer {
+    margin-bottom: 0 !important;
+    background: #171737;
+    color: #fff;
+}
+
+/*reset by custom class*/
+h1.custom {
+    margin-top: 0px;
+}
+
+/*list/checklist fix*/
+ul.ul-w-line li {
+    line-height: 30px;
 }
