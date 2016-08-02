@@ -1,42 +1,42 @@
 h1{
-		font-family: "Calibri", sans-serif !important;
+		font-family: "PT Sans Caption", sans-serif !important;
 		font-weight: bold;
 		letter-spacing: 5px;
 }
 h2{
-		font-family: "Calibri" , sans-serif !important;
+		font-family: "PT Sans Caption" , sans-serif !important;
 }
 h3{
 		line-height: 175%;
-		font-family: "Calibri" , sans-serif !important;
+		font-family: "PT Sans Caption" , sans-serif !important;
 }
 h4{
-		font-family: "Calibri" , sans-serif !important;
+		font-family: "PT Sans Caption" , sans-serif !important;
 }
 body{
       	position: relative;  	
 }
 section{
 		float: left;
-		font-family: "Calibri", sans-serif !important;
+		font-family: "PT Sans Caption", sans-serif !important;
 }
 nav{
     	background-color: #FFFFFF;
 }
 p{
 		line-height: 200%;
-		font-family: "Calibri", sans-serif !important;
+		font-family: "PT Sans Caption", sans-serif !important;
 }
 h3{
 		line-height: 175%;
-		font-family: "Calibri", sans-serif !important;
+		font-family: "PT Sans Caption", sans-serif !important;
 }
 td{
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-top: 15px;
 		text-align: justify;
-		font-family: "Calibri" , sans-serif !important;
+		font-family: "PT Sans Caption" , sans-serif !important;
 }
 footer{
 	    position:absolute;
@@ -65,7 +65,11 @@ ul#menu li{
 ul#menu2 li{
 		display:inline;
 		padding-right: 23px;
-		font-family: "Calibri" !important;
+		font-family: "PT Sans Caption" !important;
+}
+.start-in-your-country{
+		letter-spacing: -1px;
+
 }
 .btn{
 		border-radius: 0px !important;
@@ -73,6 +77,16 @@ ul#menu2 li{
 		outline-color: #ed8437;
 		width: 20%;
 		height: 45px;
+}
+.how-to-register{
+		margin-left: 20px;
+		margin-right: 40px;
+		font-size: 90%;
+}
+.eligibility{
+		margin-left: 20px;
+		margin-right: 60px;
+		font-size: 90%;
 }
 .margin-modal{
 		margin-left: 40px;
@@ -115,7 +129,7 @@ ul#menu2 li{
 .to-left-nav{
 		padding-right: 100px;
 		padding-left: 40px;
-		font-family: "Calibri", sans-serif !important;
+		font-family: "PT Sans Caption", sans-serif !important;
 		letter-spacing: 2px;
 }
 .to-left{
