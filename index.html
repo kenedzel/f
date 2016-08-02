@@ -1,361 +1,441 @@
 <html>
-  <title>Mobile Challenge Asia Pacific - MCAP</title>
-  <head>
-          <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-          <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
-          <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-          <link rel="stylesheet" href="css/custom.css">
-          <link rel="stylesheet" href="css/jquery.bsPhotoGallery.css">
-          <link rel="stylesheet" href="css/flag-icon.css">
-          <link rel="stylesheet" href="css/flag-icon.min.css">
+<title>Mobile Challenge Asia Pacific - MCAP</title>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/jquery.bsPhotoGallery.css">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cloud.github.com/downloads/lafeber/world-flags-sprite/flags32.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-          <link rel="stylesheet" type="text/css" href="https://cloud.github.com/downloads/lafeber/world-flags-sprite/flags32.css"/>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-          <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script type="text/javascript" src="js/jquery.js"></script>
-          <script src="js/jquery.bsPhotoGallery.js"></script>
-          <script src="js/gallery.js"></script>
-          <script src="js/modal.js"></script>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-     <!-- Modal -->
-      <div class="modal fade" id="partnerModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <button type="button" class="close" style="color:orange;padding-right:25px;padding-top:15px;" data-dismiss="modal"><strong>X</strong></button>
-              <h1 align="center" class="font-orange modal-organizers" style="font-size:200%;letter-spacing: 2px;"><i class="fa fa-briefcase"></i> <strong>MCAP ORGANISERS</strong></h1>             
-            <div class="modal-body">
-              <div align="center">
-                <img src="images/gsma-logo.png" style="width:15%;height:10%;">
-                <img src="images/quest-logo.jpg" style="width:15%;height:10%;">
-              </div>
-              <div align="center">
-                <h2 class="font-orange modal-partners" style="font-size:150%;"><strong>GLOBAL PARTNERS</strong></h2>
-                <img src="images/gsma-logo.png" style="width:15%;height:10%;">
-                <img src="images/quest-logo.jpg" style="width:15%;height:10%;">
-              </div>
-              <div align="center">
-                <h2 class="font-orange modal-partners" style="font-size:150%;"><strong>REGIONAL PARTNERS</strong></h2>
-                <img src="images/gsma-logo.png" class="img-modal-partners">
-                <img src="images/quest-logo.jpg" class="img-modal-partners">
-                <img src="images/gsma-logo.png" class="img-modal-partners">
-                <img src="images/quest-logo.jpg" class="img-modal-partners">
-                <img src="images/gsma-logo.png" class="img-modal-partners">
-              </div>
-              <div align="center">
-                <h2 class="font-orange modal-partners" style="font-size:150%;"><strong>SPONSORS</strong></h2>
-                <img src="images/gsma-logo.png" style="width:15%;height:10%;">
-                <img src="images/quest-logo.jpg" style="width:15%;height:10%;">
-                <img src="images/gsma-logo.png" style="width:15%;height:10%;">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- END MODAL FOR PARTNERS-->
-      <div class="modal fade" id="timelineModal" role="dialog"><!-- START MODAL FOR TIMELINE -->
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <button type="button" class="close" style="color:orange;padding-right:25px;padding-top:15px;" data-dismiss="modal"><strong>X</strong></button>
-              <h1 align="center" class="font-orange" style="font-size:200%;letter-spacing: 2px;"><i class="fa fa-clock-o"></i> <strong>TIMELINE</strong></h1>  
-            <div class="modal-body modal-body-scrollable">
-              <div align="center">
-                <img src="images/timeline.png" class="img-modal-timeline">
-                <p align="justify" class="margin-modal">The Challenge is conducted in two phases - the Country Semi-Finals and the Regional Finals(held in each of the participating countries) and the MCAP Regional Finals.</p>
-                <h5 class="font-orange" align="left"><strong>Country Semi-Finals</strong></h5>
-                <p align="justify" class="margin-modal">In Phase One, participating teams in each country will have the opportunity to submit their mobile-related applications, software and hardware proposals for consideration. If selected, your team may undergo an Acceleration program. For more details on submission deadlines and criteria, please click on your Country Flag below.</p>
-                <h5 class="font-orange" align="left"><strong>Regional Final</strong></h5>
-                <p align="justify" class="margin-modal">In Phase Two, which is the Regional Final, the three winning teams from each country semi-final will come together to compete. In January 2017 the top three Regional Finalist teams stand to win a trip to Barcelona to showcase their Mobile solution at the at the GSMA Conference.</p>
-                <p align="justify" class="margin-modal">So why wait? Join now and expand your horizon, explore new ideas, network with developers around the region, gain experience and have lots of fun!</p>
-                <h5 class="font-orange" align="left"><strong>Acceleration Programme</strong></h5>
-                <p align="justify" class="margin-modal">The Acceleration Program is intended to provide competiting teams with a tangible roadmap on how to develop their idea and mobile solution and make them commercial-ready. This involves a one-day bootcamp with mentors, experts, investors and successful entrepreneurs. The bootcamps may not be available in all countries but the MCAP team will be providing online support and mentoring for other teams. Please click on the country flag for updates on acceleration bootcamps in your country.</p>
-                <h2 class="font-orange"><i class="fa fa-calendar-o"></i> SCHEDULE</h2>
-                <div align="center">
-                  <table>
-                    <tr>
-                      <td>10:00 - 11:00</td><td>First session</td>
-                    </tr>
-                    <tr>
-                      <td></td><td>- First group of 9 teams will present their ideas</td>
-                    </tr>
-                    <tr>
-                      <td></td><td>- 3-minute presentation + 3 minutes of Q&A</td>
-                    </tr>
-                    <tr>
-                      <td>11:00 - 11:30</td><td>Coffee break</td>
-                    </tr>
-                    <tr>
-                      <td>11:30 - 12:30</td><td>Second session</td>
-                    </tr>
-                    <tr>
-                      <td></td><td>- Second group of 9 teams will present their ideas</td>
-                    </tr>
-                    <tr>
-                      <td></td><td>- 3-minute presentation + 3 minutes of Q&A</td>
-                    </tr>
-                    <tr>
-                      <td>12:30 - 13:30</td><td>Lunch</td>
-                    </tr>
-                    <tr>
-                      <td>13:30 - 14:30</td><td>Third session</td>
-                    </tr>
-                    <tr>
-                      <td></td><td>- Third group of 9 teams will present their ideas</td>
-                    </tr>
-                    <tr>
-                      <td></td><td>- 3-minute presentation + 3 minutes of Q&A</td>
-                    </tr>
-                    <tr>
-                      <td>14:30 - 15:00</td><td>Sponsor Presentations</td>
-                    </tr>
-                    <tr>
-                      <td>15:00 - 15:20</td><td>Coffee break</td>
-                    </tr>
-                    <tr>
-                      <td>15:20 - 15:50</td><td>Panel discussion</td>
-                    </tr>
-                    <tr>
-                      <td>15:50 - 16:20</td><td>Award Ceremony</td>
-                    </tr>
-                    <tr>
-                      <td>15:50 - 16:20</td><td>Group Photograph</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="japanModal" role="dialog"><!-- START MODAL FOR TIMELINE -->
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <button type="button" class="close" style="color:orange;padding-right:25px;padding-top:15px;" data-dismiss="modal"><strong>X</strong></button>
-              <h1 align="center" class="font-orange" style="font-size:200%;letter-spacing: 2px;"><i class="fa fa-send-o"></i> <strong>APPLY NOW</strong></h1> 
-            <div class="modal-body modal-body-scrollable">
-              <div align="center">
-                      <p>
-                        <div align="center">
-                          <table class="f32">
-                            <tr>
-                              <td><a href="#" class="flag jp flags" data-toggle="modal" data-target="#japanModal"></a></td>
-                              <td><a href="#" class="flag tw flags"></a></td>
-                              <td><a href="#" class="flag th flags"></a></td>
-                              <td><a href="#" class="flag sg flags"></a></td>
-                              <td><a href="#" class="flag us flags"></a></td>
-                            </tr>
-                            <tr>
-                              <td class="black-font flag-name">Japan</td>
-                              <td class="black-font flag-name">Taiwan</td>
-                              <td class="black-font">Thailand</td>
-                              <td class="black-font">Singapore</td>
-                              <td class="black-font flag-name">Hawaii</td>
-                            </tr>
-                            <tr>
-                              <td><a href="#" class="flag ph flags"></a></td>
-                              <td><a href="#" class="flag my flags"></a></td>
-                              <td><a href="#" class="flag id flags"></a></td>
-                              <td><a href="#" class="flag kr flags"></a></td>
-                              <td><a href="#" class="flag hk flags"></a></td>
-                            </tr>
-                            <tr>
-                              <td class="black-font">Philippines</td>
-                              <td class="black-font">Malaysia</td>
-                              <td class="black-font">Indonesia</td>
-                              <td class="black-font flag-name">Korea</td>
-                              <td class="black-font">Hong Kong</td>
-                            </tr>
-                          </table>
-                        </div>
-                       </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-          </button>
-<!--           <a class="navbar-brand" href="#">WebSiteName</a> -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a href="#"><img class="navbar-brand" src="images/mcap.png"></a>
         </div>
         <div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="to-left-nav"><a href="#section1">Home</a></li>
-                <li class="to-left-nav"><a href="#section3">About</a></li>
-                <li class="to-left-nav"><a href="#section7">Timeline</a></li>
-                <li class="to-left-nav"><a href="#section8">Gallery</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#"><span class="fa fa-facebook social-padding"></span></a></li>
-              <li><a href="#" class="bgorange"  data-toggle="modal" data-target="#japanModal"><strong>APPLY NOW</strong></a></li>
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="to-left-nav"><a href="#section1">Home</a></li>
+                    <li class="to-left-nav"><a href="#section3">About</a></li>
+                    <li class="to-left-nav"><a href="#section7">Timeline</a></li>
+                    <li class="to-left-nav"><a href="#section8">Gallery</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-facebook social-padding"></span></a></li>
+                    <li><a href="#" class="bgorange" data-toggle="modal" data-target="#japanModal"><strong>APPLY
+                        NOW</strong></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </nav>    
+    </div>
+</nav>
 
-    <div id="section1" class="container-fluid">
-      <h2 align="center">MOBILE CHALLENGE ASIA PACIFIC</h2>
-      <h1 class="font-orange" align="center" style="font-size:550%;"><strong>MCAP 2016-2017</strong></h1>
-      <h4 align="center" style="padding-top:40px;font-size:150%;">DO YOU HAVE A MOBILE SOLUTION?</h4>
-      <h4 align="center" style="padding-top:15px;font-size:150%;">
+<div id="section1" class="container-fluid">
+    <h2 align="center">MOBILE CHALLENGE ASIA PACIFIC</h2>
+    <h1 class="font-orange" align="center" style="font-size:550%;"><strong>MCAP 2016-2017</strong></h1>
+    <h4 align="center" style="padding-top:40px;font-size:150%;">DO YOU HAVE A MOBILE SOLUTION?</h4>
+    <h4 align="center" style="padding-top:15px;font-size:150%;">
         <ul id="menu">
-          <li><i class="fa fa-cubes"></i> software</li>
-          <li><i class="fa fa-laptop"></i> hardware</li>
-          <li><i class="fa fa-mobile"></i> mobile apps</li>
-          <li><i class="fa fa-wifi"></i> IoT</li>
-          <li><i class="fa fa-database"></i> Big Data</li>
+            <li><i class="fa fa-cubes"></i> software</li>
+            <li><i class="fa fa-laptop"></i> hardware</li>
+            <li><i class="fa fa-mobile"></i> mobile apps</li>
+            <li><i class="fa fa-wifi"></i> IoT</li>
+            <li><i class="fa fa-database"></i> Big Data</li>
         </ul>
-      </h4>
-      <h3 align="justify" style="padding-top:15px;padding-left:250px;padding-right:280px;font-size:150%">At the Asia-Pacific Regional Finals, stand to win a trip to Barcelona for the Global Mobile Challenge Finals during the Mobile World Congress 2017</h3>
-    </div>
-    <div id="section2" class="container-fluid">
-          <h1 align="center">WELCOME TO MCAP 2016!</h1>
-          <p class="black-font" align="justify" style="padding-left:170px;padding-right:200px;">Eager to transform your ideas into creations? Passionate about designing mobile solutions and disruptive technology addressing
-            different challenges. Join MCAP and be part of the largest competition of its kind spread across six continents. MCAP - Mobile
-            Challenge Asia Pacific is looking for innovative mobile solutions and ideas across the region. At the Regional Finals that brings
-            together entrepreneurs from 10 countries, you can meet and compete for 3 places at the GSMA Barcelona Conference for the Global
-            Mobile Challenge Finals in 2017. This challenge is organized by IE Business School in conjuction with GSMA.</p>
-    </div>
-    <div id="section3" class="container-fluid" style="background-color:#ed8437;">
-      <div class="row">
-          <div class="col-lg-6">
-              <h1 align="center" style"padding-top:20px;"><i class="fa fa-pencil-square-o"></i> HOW TO REGISTER</h1>
-              <div class="how-to-register">
+    </h4>
+    <h3 align="justify" style="padding-top:15px;padding-left:250px;padding-right:280px;font-size:150%">At the
+        Asia-Pacific Regional Finals, stand to win a trip to Barcelona for the Global Mobile Challenge Finals during the
+        Mobile World Congress 2017</h3>
+</div>
+
+<div id="section2" class="container-fluid">
+    <h1 align="center">WELCOME TO MCAP 2016!</h1>
+    <p class="black-font" align="justify" style="padding-left:170px;padding-right:200px;">Eager to transform your ideas
+        into creations? Passionate about designing mobile solutions and disruptive technology addressing
+        different challenges. Join MCAP and be part of the largest competition of its kind spread across six continents.
+        MCAP - Mobile
+        Challenge Asia Pacific is looking for innovative mobile solutions and ideas across the region. At the Regional
+        Finals that brings
+        together entrepreneurs from 10 countries, you can meet and compete for 3 places at the GSMA Barcelona Conference
+        for the Global
+        Mobile Challenge Finals in 2017. This challenge is organized by IE Business School in conjuction with GSMA.</p>
+</div>
+
+<div id="section3" class="container-fluid" style="background-color:#ed8437;">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 align="center" style"padding-top:20px;"><i class="fa fa-pencil-square-o"></i> HOW TO REGISTER</h1>
+            <div class="how-to-register">
                 <ul class="fa-ul">
                     <li><i class="fa fa-check-square-o"></i> Do you have a new innovative idea related to mobile?</li>
-                    <li><i class="fa fa-check-square-o"></i> Do you have an early stage start up in the mobile sector?</li>
+                    <li><i class="fa fa-check-square-o"></i> Do you have an early stage start up in the mobile sector?
+                    </li>
                     <li><i class="fa fa-check-square-o"></i> Are you an entrepreneur at heart?</li>
                 </ul>
-                <p align="justify" style="padding-left:30px;">If you answered YES to any of the questions above, then you should register
-                your team to take part in this challenge. Please register your team details only
-                once. We ask that the team leader from every team to enter your mobile
-                solution name to avoid duplicate entries.</p>
+                <p align="justify" style="padding-left:30px;">If you answered YES to any of the questions above, then
+                    you should register
+                    your team to take part in this challenge. Please register your team details only
+                    once. We ask that the team leader from every team to enter your mobile
+                    solution name to avoid duplicate entries.</p>
             </div>
-          </div>
-          <div class="col-lg-6 bgwhite">
-              <h1 align="center"><i class="fa fa-thumbs-o-up"></i> ELIGIBILITY</h1>
-              <div class="eligibility">
+        </div>
+        <div class="col-lg-6 bgwhite">
+            <h1 align="center"><i class="fa fa-thumbs-o-up"></i> ELIGIBILITY</h1>
+            <div class="eligibility">
                 <p align="justify" style="padding-left:50px;">The team must consist of 2-6 applicants</p>
                 <p>
-                  <ul class="fa-ul">
-                      <li><i class="fa fa-check-square"></i> At least one applicant from the team has to be between the ages of 18 and 35</li>
-                      <li><i class="fa fa-check-square"></i> At least one applicant from the team has to be a resident of a participating country</li>
-                      <li><i class="fa fa-check-square"></i> Applicants should not have any current Venture-Capital funding of more than
-                      USD $250,000</li>
-                  </ul>
+                <ul class="fa-ul">
+                    <li><i class="fa fa-check-square"></i> At least one applicant from the team has to be between the
+                        ages of 18 and 35
+                    </li>
+                    <li><i class="fa fa-check-square"></i> At least one applicant from the team has to be a resident of
+                        a participating country
+                    </li>
+                    <li><i class="fa fa-check-square"></i> Applicants should not have any current Venture-Capital
+                        funding of more than
+                        USD $250,000
+                    </li>
+                </ul>
                 </p>
                 <p align="justify" style="padding-left:30px;">Eligibility criteria may vary from country to country.</p>
             </div>
-          </div>
-      </div>
+        </div>
     </div>
-    <div id="section4" class="container-fluid">
-      <h1 align="center"><i class="fa fa-send-o"></i> <strong>APPLY NOW</strong></h1>
-      <h4 align="center" style="margin-top:30px;letter-spacing:2px;"><strong>TO START, PLEASE SELECT A COUNTRY.</strong></h4>
-      <p>
-        <div align="center">
-          <table class="f32">
+</div>
+
+<div id="section4" class="container-fluid">
+    <h1 align="center"><i class="fa fa-send-o"></i> <strong>APPLY NOW</strong></h1>
+    <h4 align="center" style="margin-top:30px;letter-spacing:2px;"><strong>TO START, PLEASE SELECT A COUNTRY.</strong>
+    </h4>
+    <p>
+    <div align="center">
+        <table class="f32">
             <tr>
-            <td><a href="#" class="flag jp flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag tw flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag th flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag sg flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag us flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag ph flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag my flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag id flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag kr flags" data-toggle="modal" data-target="#japanModal"></a></td>
-            <td><a href="#" class="flag hk flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag jp flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag tw flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag th flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag sg flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag us flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag ph flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag my flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag id flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag kr flags" data-toggle="modal" data-target="#japanModal"></a></td>
+                <td><a href="#" class="flag hk flags" data-toggle="modal" data-target="#japanModal"></a></td>
             </tr>
             <tr>
-            <td class="font-white flag-name">Japan</td>
-            <td class="font-white">Taiwan</td>
-            <td class="font-white">Thailand</td>
-            <td class="font-white">Singapore</td>
-            <td class="font-white flag-name">Hawaii</td>
-            <td class="font-white">Philippines</td>
-            <td class="font-white">Malaysia</td>
-            <td class="font-white">Indonesia</td>
-            <td class="font-white flag-name">Korea</td>
-            <td class="font-white">Hong Kong</td>
-          </tr>
-          </table>
-        </div>
-       </p>
+                <td class="font-white flag-name">Japan</td>
+                <td class="font-white">Taiwan</td>
+                <td class="font-white">Thailand</td>
+                <td class="font-white">Singapore</td>
+                <td class="font-white flag-name">Hawaii</td>
+                <td class="font-white">Philippines</td>
+                <td class="font-white">Malaysia</td>
+                <td class="font-white">Indonesia</td>
+                <td class="font-white flag-name">Korea</td>
+                <td class="font-white">Hong Kong</td>
+            </tr>
+        </table>
     </div>
-    <div id="section5" class="container-fluid ">
-      <h1 align="center" class="font-orange" style="font-size:200%;"><i class="fa fa-briefcase"></i> <strong>MCAP ORGANISERS</strong></h1>
-      <div align="center">
+    </p>
+</div>
+
+<div id="section5" class="container-fluid ">
+    <h1 align="center" class="font-orange" style="font-size:200%;"><i class="fa fa-briefcase"></i> <strong>MCAP
+        ORGANISERS</strong></h1>
+    <div align="center">
         <img src="images/gsma-logo.png" class="img-partners">
         <img src="images/quest-logo.jpg" class="img-partners" style="margin-left:70px;">
-      </div>
-      <div align="center"><br>
-        <button type="button" class="btn btn-warning"  data-toggle="modal" data-target="#partnerModal">VIEW ALL PARTNERS & SPONSORS</button>
-      </div>
     </div>
-    <div id="section6" class="container-fluid">
-      <h1 class="font-orange start-in-your-country" align="center"><strong>START IN YOUR COUNTRY, END IN BARCELONA.</strong></h1>
-      <p class="black-font" style="padding-left:180px;padding-right:150px;" align="justify">Global Mobile Challenge is entrepreneurship competition where innovators from around the world first compete in their global
-        region to win a trip to Barcelona to take the overall crown. In partnership with 4YFN (Four Years From Now) and Mobile World
-        Congress, The Global Mobile Challenge brings together teams from every continent through regional competitions culminating in a
+    <div align="center"><br>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#partnerModal">VIEW ALL PARTNERS
+            & SPONSORS
+        </button>
+    </div>
+</div>
+
+<div id="section6" class="container-fluid">
+    <h1 class="font-orange start-in-your-country" align="center"><strong>START IN YOUR COUNTRY, END IN
+        BARCELONA.</strong></h1>
+    <p class="black-font" style="padding-left:180px;padding-right:150px;" align="justify">Global Mobile Challenge is
+        entrepreneurship competition where innovators from around the world first compete in their global
+        region to win a trip to Barcelona to take the overall crown. In partnership with 4YFN (Four Years From Now) and
+        Mobile World
+        Congress, The Global Mobile Challenge brings together teams from every continent through regional competitions
+        culminating in a
         finals in Barcelona.</p>
-      <p class="black-font" style="padding-left:180px;padding-right:150px;" align="justify">The biggest mobile application competition for young entrepreneurs & innovators from all over the world featuring apps, IOT and
-      other mobile solutions in both software and hardware. Teams are provided training, education and access to an international network
-      of mentors, angel investors, venture capitalists, and industry leaders.</p>
+    <p class="black-font" style="padding-left:180px;padding-right:150px;" align="justify">The biggest mobile application
+        competition for young entrepreneurs & innovators from all over the world featuring apps, IOT and
+        other mobile solutions in both software and hardware. Teams are provided training, education and access to an
+        international network
+        of mentors, angel investors, venture capitalists, and industry leaders.</p>
+</div>
+
+<div id="section7" class="container-fluid">
+    <h1 align="center" class="font-orange" style="margin-top:-20px;"><i class="fa fa-clock-o"></i> TIMELINE</h1>
+    <p align="center" class="black-font">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/zKA0GUJ3E2g" frameborder="0"
+                allowfullscreen></iframe>
+    </p>
+    <div align="center"><br>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#timelineModal">VIEW SCHEDULE AND
+            DETAILS
+        </button>
     </div>
-    <div id="section7" class="container-fluid">
-      <h1 align="center" class="font-orange" style="margin-top:-20px;"><i class="fa fa-clock-o"></i> TIMELINE</h1>
-      <p align="center" class="black-font"><iframe width="700" height="400" src="https://www.youtube.com/embed/zKA0GUJ3E2g" frameborder="0" allowfullscreen></iframe></p>
-      <div align="center"><br>
-        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#timelineModal">VIEW SCHEDULE AND DETAILS</button>
-      </div>
+</div>
+
+<div id="section8" class="container-fluid">
+    <h1 class="font-orange" align="center"><i class="fa fa-photo"></i> PHOTO GALLERY</h1>
+    <ul class="first">
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p1.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p2.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p3.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p4.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p5.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p6.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p7.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p8.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
+            <img src="images/portfolio/p9.jpg">
+        </li>
+    </ul>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="partnerModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <button type="button" class="close" style="color:orange;padding-right:25px;padding-top:15px;"
+                    data-dismiss="modal"><strong>X</strong></button>
+            <h1 align="center" class="font-orange modal-organizers" style="font-size:200%;letter-spacing: 2px;"><i
+                    class="fa fa-briefcase"></i> <strong>MCAP ORGANISERS</strong></h1>
+            <div class="modal-body">
+                <div align="center">
+                    <img src="images/gsma-logo.png" style="width:15%;height:10%;">
+                    <img src="images/quest-logo.jpg" style="width:15%;height:10%;">
+                </div>
+                <div align="center">
+                    <h2 class="font-orange modal-partners" style="font-size:150%;"><strong>GLOBAL PARTNERS</strong></h2>
+                    <img src="images/gsma-logo.png" style="width:15%;height:10%;">
+                    <img src="images/quest-logo.jpg" style="width:15%;height:10%;">
+                </div>
+                <div align="center">
+                    <h2 class="font-orange modal-partners" style="font-size:150%;"><strong>REGIONAL PARTNERS</strong>
+                    </h2>
+                    <img src="images/gsma-logo.png" class="img-modal-partners">
+                    <img src="images/quest-logo.jpg" class="img-modal-partners">
+                    <img src="images/gsma-logo.png" class="img-modal-partners">
+                    <img src="images/quest-logo.jpg" class="img-modal-partners">
+                    <img src="images/gsma-logo.png" class="img-modal-partners">
+                </div>
+                <div align="center">
+                    <h2 class="font-orange modal-partners" style="font-size:150%;"><strong>SPONSORS</strong></h2>
+                    <img src="images/gsma-logo.png" style="width:15%;height:10%;">
+                    <img src="images/quest-logo.jpg" style="width:15%;height:10%;">
+                    <img src="images/gsma-logo.png" style="width:15%;height:10%;">
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="section8" class="container-fluid">
-      <h1 class="font-orange" align="center"><i class="fa fa-photo"></i> PHOTO GALLERY</h1>
-       <ul class="first">
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p1.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p2.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p3.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p4.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p5.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p6.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p7.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p8.jpg">
-          </li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery-margin">
-              <img src="images/portfolio/p9.jpg">
-          </li>
-      </ul>
+</div><!-- END MODAL FOR PARTNERS-->
+
+<div class="modal fade" id="timelineModal" role="dialog"><!-- START MODAL FOR TIMELINE -->
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <button type="button" class="close" style="color:orange;padding-right:25px;padding-top:15px;"
+                    data-dismiss="modal"><strong>X</strong></button>
+            <h1 align="center" class="font-orange" style="font-size:200%;letter-spacing: 2px;"><i
+                    class="fa fa-clock-o"></i> <strong>TIMELINE</strong></h1>
+            <div class="modal-body modal-body-scrollable">
+                <div align="center">
+                    <img src="images/timeline.png" class="img-modal-timeline">
+                    <p align="justify" class="margin-modal">The Challenge is conducted in two phases - the Country
+                        Semi-Finals and the Regional Finals(held in each of the participating countries) and the MCAP
+                        Regional Finals.</p>
+                    <h5 class="font-orange" align="left"><strong>Country Semi-Finals</strong></h5>
+                    <p align="justify" class="margin-modal">In Phase One, participating teams in each country will have
+                        the opportunity to submit their mobile-related applications, software and hardware proposals for
+                        consideration. If selected, your team may undergo an Acceleration program. For more details on
+                        submission deadlines and criteria, please click on your Country Flag below.</p>
+                    <h5 class="font-orange" align="left"><strong>Regional Final</strong></h5>
+                    <p align="justify" class="margin-modal">In Phase Two, which is the Regional Final, the three winning
+                        teams from each country semi-final will come together to compete. In January 2017 the top three
+                        Regional Finalist teams stand to win a trip to Barcelona to showcase their Mobile solution at
+                        the at the GSMA Conference.</p>
+                    <p align="justify" class="margin-modal">So why wait? Join now and expand your horizon, explore new
+                        ideas, network with developers around the region, gain experience and have lots of fun!</p>
+                    <h5 class="font-orange" align="left"><strong>Acceleration Programme</strong></h5>
+                    <p align="justify" class="margin-modal">The Acceleration Program is intended to provide competiting
+                        teams with a tangible roadmap on how to develop their idea and mobile solution and make them
+                        commercial-ready. This involves a one-day bootcamp with mentors, experts, investors and
+                        successful entrepreneurs. The bootcamps may not be available in all countries but the MCAP team
+                        will be providing online support and mentoring for other teams. Please click on the country flag
+                        for updates on acceleration bootcamps in your country.</p>
+                    <h2 class="font-orange"><i class="fa fa-calendar-o"></i> SCHEDULE</h2>
+                    <div align="center">
+                        <table>
+                            <tr>
+                                <td>10:00 - 11:00</td>
+                                <td>First session</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- First group of 9 teams will present their ideas</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- 3-minute presentation + 3 minutes of Q&A</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 - 11:30</td>
+                                <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                                <td>11:30 - 12:30</td>
+                                <td>Second session</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- Second group of 9 teams will present their ideas</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- 3-minute presentation + 3 minutes of Q&A</td>
+                            </tr>
+                            <tr>
+                                <td>12:30 - 13:30</td>
+                                <td>Lunch</td>
+                            </tr>
+                            <tr>
+                                <td>13:30 - 14:30</td>
+                                <td>Third session</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- Third group of 9 teams will present their ideas</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- 3-minute presentation + 3 minutes of Q&A</td>
+                            </tr>
+                            <tr>
+                                <td>14:30 - 15:00</td>
+                                <td>Sponsor Presentations</td>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:20</td>
+                                <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                                <td>15:20 - 15:50</td>
+                                <td>Panel discussion</td>
+                            </tr>
+                            <tr>
+                                <td>15:50 - 16:20</td>
+                                <td>Award Ceremony</td>
+                            </tr>
+                            <tr>
+                                <td>15:50 - 16:20</td>
+                                <td>Group Photograph</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-   <footer>
+</div>
+
+<div class="modal fade" id="japanModal" role="dialog"><!-- START MODAL FOR TIMELINE -->
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <button type="button" class="close" style="color:orange;padding-right:25px;padding-top:15px;"
+                    data-dismiss="modal"><strong>X</strong></button>
+            <h1 align="center" class="font-orange" style="font-size:200%;letter-spacing: 2px;"><i
+                    class="fa fa-send-o"></i> <strong>APPLY NOW</strong></h1>
+            <div class="modal-body modal-body-scrollable">
+                <div align="center">
+                    <p>
+                    <div align="center">
+                        <table class="f32">
+                            <tr>
+                                <td><a href="#" class="flag jp flags" data-toggle="modal" data-target="#japanModal"></a>
+                                </td>
+                                <td><a href="#" class="flag tw flags"></a></td>
+                                <td><a href="#" class="flag th flags"></a></td>
+                                <td><a href="#" class="flag sg flags"></a></td>
+                                <td><a href="#" class="flag us flags"></a></td>
+                            </tr>
+                            <tr>
+                                <td class="black-font flag-name">Japan</td>
+                                <td class="black-font flag-name">Taiwan</td>
+                                <td class="black-font">Thailand</td>
+                                <td class="black-font">Singapore</td>
+                                <td class="black-font flag-name">Hawaii</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="flag ph flags"></a></td>
+                                <td><a href="#" class="flag my flags"></a></td>
+                                <td><a href="#" class="flag id flags"></a></td>
+                                <td><a href="#" class="flag kr flags"></a></td>
+                                <td><a href="#" class="flag hk flags"></a></td>
+                            </tr>
+                            <tr>
+                                <td class="black-font">Philippines</td>
+                                <td class="black-font">Malaysia</td>
+                                <td class="black-font">Indonesia</td>
+                                <td class="black-font flag-name">Korea</td>
+                                <td class="black-font">Hong Kong</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
     <p style="float:left;margin-top:10px;" class="footer-to-left"><strong>CONTACT US | info@mobile-asia.com</strong></p>
-    <p style="float:right;margin-top:10px;" class="footer-to-right"><strong>Copyright &copy; 2016 MCAP - All Rights Reserved.</strong></p>
-  </footer> 
+    <p style="float:right;margin-top:10px;" class="footer-to-right"><strong>Copyright &copy; 2016 MCAP - All Rights
+        Reserved.</strong></p>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.bsPhotoGallery.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+
+</body>
 </html>
