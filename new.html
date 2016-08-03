@@ -10,14 +10,14 @@
 
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/jquery.bsPhotoGallery.css">
+    <!-- <link rel="stylesheet" href="css/jquery.bsPhotoGallery.css"> -->
+    <link rel="stylesheet" href="swipebox/css/swipebox.css">
     <link rel="stylesheet" href="css/flag-icon.css">
     <link rel="stylesheet" href="css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="https://cloud.github.com/downloads/lafeber/world-flags-sprite/flags32.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="css/custom.css" >
-    <!-- <link rel="stylesheet" href="css/full-width-pics.css"> -->
 
 </head>
 
@@ -25,14 +25,34 @@
 
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
-            
-            <div class="navbar-header pull-left navbar-left">
-              <a href="#"><img class="navbar-brand" src="images/mcap.png"></a>
+
+            <div class="pull-left navbar-left">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><img class="navbar-brand pull-left" src="images/mcap.png"></a>
             </div>
-            <div class="navbar-header pull-right navbar-right">
-                <!-- <button type="button" class="btn btn-default navbar-btn">Button 1</button> -->
+
+            <div class="pull-right navbar-right">
                 <button type="button" class="btn btn-default navbar-btn bgorange font-white" data-toggle="modal" data-target="#japanModal"><strong>APPLY NOW</strong></button>
             </div>
+
+            <div class="">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section3">About</a></li>
+                        <li><a href="#section7">Timeline</a></li>
+                        <li><a href="#section8">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- <div class="navbar-header pull-left navbar-left"> -->
+              <!-- <a href="#"><img class="navbar-brand" src="images/mcap.png"></a> -->
+            <!-- </div> -->
 
         </div>
     </nav>
@@ -214,9 +234,9 @@
 
             <p class="custom section-head-text thick font-orange" style="margin-top:-20px;"><i class="fa fa-clock-o"></i> TIMELINE<p />
 
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zKA0GUJ3E2g" allowfullscreen>
-              </iframe>
+            <div class="embed-responsive embed-responsive-16by9" id="timeline_player">
+              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zKA0GUJ3E2g?rel=0" allowfullscreen></iframe> -->
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qJ1RHcNSMO0?rel=0" allowfullscreen></iframe>
             </div>
 
             <!-- <p align="center" class="black-font">
@@ -233,37 +253,59 @@
     </section>
 
     <section id="section8">
-        <div class="container-fluid gallery-wrapper">
+        <div class="container gallery-wrapper">
             <p class="custom section-head-text thick font-orange" align="center"><i class="fa fa-photo"></i> PHOTO GALLERY</p>
-            <ul class="gallery">
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p1.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p2.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p3.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p4.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p5.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p6.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p7.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p8.jpg">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                    <img src="images/portfolio/p9.jpg">
-                </li>
-            </ul>
+
+            <!-- Gallery-->
+
+            <div class="row">
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p1.jpg" class="swipebox">
+                        <img src="images/portfolio/p1.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p2.jpg" class="swipebox">
+                        <img src="images/portfolio/p2.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p3.jpg" class="swipebox">
+                        <img src="images/portfolio/p3.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p4.jpg" class="swipebox">
+                        <img src="images/portfolio/p4.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p5.jpg" class="swipebox">
+                        <img src="images/portfolio/p5.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p6.jpg" class="swipebox">
+                        <img src="images/portfolio/p6.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p7.jpg" class="swipebox">
+                        <img src="images/portfolio/p7.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p8.jpg" class="swipebox">
+                        <img src="images/portfolio/p8.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                    <a rel="gallery-1" href="images/portfolio/p9.jpg" class="swipebox">
+                        <img src="images/portfolio/p9.jpg">
+                    </a>
+                </div>
+
         </div>
     </section>
 
@@ -462,18 +504,28 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-default navbar-custom-footer navbar-static-bottom">
+    <!-- <nav class="navbar navbar-default navbar-custom-footer navbar-static-bottom">
         <div class="container" style="padding-top: 18px;">
             <p class="pull-left"><strong>CONTACT US | info@mobile-asia.com</strong></p>
             <p class="pull-right"><strong>Copyright &copy; 2016 MCAP - All Rights Reserved.</strong></p>
         </div>
-    </nav>
+    </nav> -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.bsPhotoGallery.js"></script>
-    <script type="text/javascript" src="js/gallery.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.bsPhotoGallery.js"></script> -->
+    <script type="text/javascript" src="swipebox/js/jquery.swipebox.js"></script>
+    <!-- <script type="text/javascript" src="js/gallery.js"></script> -->
     <script type="text/javascript" src="js/modal.js"></script>
+
+    <script>
+        $(function() {
+            $('.nav a').on('click', function(){
+                $('.navbar-toggle').click()
+            });
+            $( '.swipebox' ).swipebox();
+        });
+    </script>
 
 </body>
 </html>
