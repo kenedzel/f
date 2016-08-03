@@ -1,0 +1,28 @@
+{
+  "name": "test_mcap_front",
+  "homepage": "https://github.com/jccultima123/test_mcap_front",
+  "authors": [
+    "kenedzel",
+    "jccultima123"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "sample",
+    "front-end"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
