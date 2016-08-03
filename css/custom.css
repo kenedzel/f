@@ -1,31 +1,25 @@
-h1 {
-    font-family: "PT Sans Caption", sans-serif !important;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
+/*@import 'https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,700&subset=latin-ext';*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans+Caption:400,700|PT+Sans:400,700&subset=latin-ext';
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "PT Sans Caption", sans-serif !important;
 }
 
 h3 {
     line-height: 175%;
-    font-family: "PT Sans Caption", sans-serif !important;
-}
-
-h4 {
-    font-family: "PT Sans Caption", sans-serif !important;
 }
 
 body {
-    position: relative;
+    /*position: relative;*/
     /*bootstrap fixed header fixes*/
     margin-top: 50px !important;
+    /*overflow-x: hidden;*/
 }
 
 section {
     /*float: left;*/
-    font-family: "PT Sans Caption", sans-serif !important;
+    /*font-family: "PT Sans Caption", sans-serif !important;*/
+    font-family: "Open Sans", sans-serif !important;
     padding: 40px !important;
 }
 
@@ -33,9 +27,37 @@ nav {
     background-color: #FFFFFF;
 }
 
+button, .btn {
+	letter-spacing: 1px;
+}
+
 p {
     line-height: 200%;
     font-family: "PT Sans Caption", sans-serif !important;
+}
+
+p,
+span.normal {
+    font-weight: normal;
+}
+
+p.thick,
+span.thick {
+    font-weight: bold;
+}
+
+p.thicker,
+span.thicker {
+    font-weight: 900;
+}
+
+p.mcap_year,
+span.mcap_year {
+    font-weight: bolder !important;
+    letter-spacing: 4px;
+    font-size: 60px;
+    margin: -30px;
+    margin-bottom: -40px;
 }
 
 h3 {
@@ -74,9 +96,10 @@ ul#menu2 li {
     font-family: "PT Sans Caption" !important;
 }
 
+.section-head-text,
 .start-in-your-country {
-    letter-spacing: -1px;
-
+    letter-spacing: 1px;
+    font-size: 2em;
 }
 
 .btn {
@@ -84,7 +107,6 @@ ul#menu2 li {
     color: #ed8437;
     background: none;
     outline-color: #ed8437;
-    width: 20%;
     height: 45px;
 }
 
@@ -165,7 +187,7 @@ ul#menu2 li {
 
 .bgorange {
     background: orange;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .black-font {
@@ -204,46 +226,31 @@ ul#menu2 li {
 
 /*navbar fixes*/
 
-@media (max-width: 1200px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
+.navbar {
+    margin-bottom: 0 !important;
 }
 
+/*quick apply btn fix*/
+div.navbar-right > a,
+div.navbar-right > button {
+	margin: 0 auto;
+}
+div.navbar-right {
+	margin-right: 0px !important;
+}
+/*while for left*/
+div.navbar-left {
+	margin-left: 20px !important;
+}
+@media (max-width: 768px) {
+	div.navbar-left {
+		margin-left: -10px !important;
+	}
+}
 /*navbar custom properties*/
 .navbar-custom {
     background: #fff !important;
+    margin-bottom: -5px !important;
 }
 
 /*end of navbar fixes */
@@ -255,6 +262,11 @@ ul#menu2 li {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+	#section1 > div > .foot-text {
+        max-width: 740px !important;
+        margin: 0 auto;
+    }
 
 #section2 {
     color: #ed8437;
@@ -275,6 +287,10 @@ ul#menu2 li {
     color: #fff;
     background-color: #171737;
 }
+
+	#section4 > div > div > table {
+	    margin: 0 auto;
+	}
 
 #section5 {
     color: #fff;
@@ -298,7 +314,7 @@ ul#menu2 li {
 
 /* SECTION MEDIA FIXES */
 @media (min-width: 768px) and (min-height: 900px) {
-    #section1 {
+    #section1 > div {
         height: 10%;
         padding-top: 100px;
     }
@@ -306,33 +322,41 @@ ul#menu2 li {
 
 /* SECTION MEDIA FIXES */
 @media (min-width: 768px) {
-    #section1 {
+    #section1 > div {
         height: 100%;
         padding-top: 50px;
     }
     #section1 > .mcap_year {
         /*color: #fff !important;*/
-        font-size: 70px;
+        font-size: 50px;
     }
     #section1 > .li-platforms {
         font-size: 15px;
     }
-    #section1 > .foot-text {
-        width: 700px;
-        margin: 0 auto;
-    }
     #section2 > div.container {
-        max-width: 768px;
+        max-width: 970px;
+    }
+    #section2 > div.container > p.message {
+        max-width: inherit;
     }
 }
 
-@media (max-width: 768px) {
+/*@media (min-width: 520px) and (max-width: 768px) {
+    #section1 {
+        max-height: inherit;
+    }
+    #section1 > .li-platforms {
+        font-size: 13px;
+    }
+}*/
+
+@media (max-width: 519px) {
     #section1 {
         max-height: inherit;
     }
     #section1 > .mcap_year {
         /*color: #fff !important;*/
-        font-size: 40px;
+        font-size: 20px !important;
     }
     #section1 > .li-platforms {
         font-size: 13px;
@@ -340,9 +364,15 @@ ul#menu2 li {
 }
 
 .navbar-custom-footer {
-    margin-bottom: 0 !important;
+	margin: 0 auto;
+    /*margin-bottom: 0 !important;*/
     background: #171737;
     color: #fff;
+}
+
+/*navbar logo/brand fix*/
+.navbar-brand {
+
 }
 
 /*reset by custom class*/
@@ -354,3 +384,39 @@ h1.custom {
 ul.ul-w-line li {
     line-height: 30px;
 }
+
+/*gallery fixes*/
+ul.gallery {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+
+ul.gallery li {
+  list-style:none;
+  margin-bottom:25px;
+}
+
+ul.gallery li img {
+  cursor: pointer;
+}
+
+div.gallery-wrapper {
+	max-width: 990px;
+}
+
+/*add shadow on embed*/
+.embed-responsive {
+	-webkit-box-shadow: -1px 10px 25px -3px rgba(0,0,0,0.35);
+	-moz-box-shadow: -1px 10px 25px -3px rgba(0,0,0,0.35);
+	box-shadow: -1px 10px 25px -3px rgba(0,0,0,0.35);
+}
+/*width fix*/
+.embed-responsive {
+	max-width: 990px;
+	margin: 0 auto;
+}
+
+.li-platforms {
+	font-weight: lighter; /*wont work*/
+}
+
