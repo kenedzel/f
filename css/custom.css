@@ -386,7 +386,8 @@ ul.ul-w-line li {
 }
 
 /*gallery fixes*/
-ul.gallery {
+
+/*ul.gallery {
   padding:0 0 0 0;
   margin:0 0 0 0;
 }
@@ -399,9 +400,19 @@ ul.gallery li {
 ul.gallery li img {
   cursor: pointer;
 }
+*/
 
 div.gallery-wrapper {
-	max-width: 990px;
+	/*max-width: 900px;*/
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+.thumb > a > img {
+	height: 150px;
+	width: 150px;
 }
 
 /*add shadow on embed*/
