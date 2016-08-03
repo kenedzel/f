@@ -1,20 +1,11 @@
-h1 {
-    font-family: "PT Sans Caption", sans-serif !important;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
+@import 'https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,700&subset=latin-ext';
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "PT Sans Caption", sans-serif !important;
 }
 
 h3 {
     line-height: 175%;
-    font-family: "PT Sans Caption", sans-serif !important;
-}
-
-h4 {
-    font-family: "PT Sans Caption", sans-serif !important;
 }
 
 body {
@@ -36,6 +27,27 @@ nav {
 p {
     line-height: 200%;
     font-family: "PT Sans Caption", sans-serif !important;
+}
+
+p,
+span.normal {
+    font-weight: normal;
+}
+
+p.thick,
+span.thick {
+    font-weight: bold;
+}
+
+p.thicker,
+span.thicker {
+    font-weight: 900;
+}
+
+p.mcap_year,
+span.mcap_year {
+    font-weight: bolder !important;
+    letter-spacing: 4px;
 }
 
 h3 {
@@ -312,7 +324,7 @@ ul#menu2 li {
     }
     #section1 > .mcap_year {
         /*color: #fff !important;*/
-        font-size: 70px;
+        font-size: 50px;
     }
     #section1 > .li-platforms {
         font-size: 15px;
@@ -322,7 +334,10 @@ ul#menu2 li {
         margin: 0 auto;
     }
     #section2 > div.container {
-        max-width: 768px;
+        max-width: 970px;
+    }
+    #section2 > div.container > p.message {
+        max-width: inherit;
     }
 }
 
@@ -343,6 +358,11 @@ ul#menu2 li {
     margin-bottom: 0 !important;
     background: #171737;
     color: #fff;
+}
+
+/*navbar logo/brand fix*/
+.navbar-brand {
+
 }
 
 /*reset by custom class*/
