@@ -36,7 +36,7 @@
             </div>
 
             <div class="pull-right navbar-right">
-                <button type="button" class="btn btn-default navbar-btn bgorange font-white" data-toggle="modal" data-target="#japanModal"><strong>APPLY NOW</strong></button>
+                <button id="apply-now-btn" type="button" class="btn btn-default navbar-btn bgorange font-white" data-toggle="modal" data-target="#japanModal"><strong>APPLY NOW</strong></button>
             </div>
 
             <div class="">
@@ -59,22 +59,21 @@
 
     <section id="section1">
         <div class="container-fluid">
-            <h3 align="center">MOBILE CHALLENGE ASIA PACIFIC</h3>
-            <p class="font-orange thick mcap_year text-center hidden-sm hidden-xs">MCAP 2016-2017</p>
-            <p class="font-orange thick mcap_year text-center hidden-md hidden-lg" style="margin:0 !important;line-height:60px;">MCAP<br />2016-2017</p>
-            <h4 align="center" style="padding-top:40px;font-size:150%;">DO YOU HAVE A MOBILE SOLUTION?</h4>
+            <p class="mcap" align="center">MOBILE CHALLENGE ASIA PACIFIC</p>
+            <p class="font-orange thick mcap_year text-center">MCAP 2016-2017</p>
+            <!-- <p class="font-orange thick mcap_year text-center hidden-md hidden-lg">MCAP<br />2016-2017</p> -->
+            <p class="mcap-q-solution" align="center">DO YOU HAVE A MOBILE SOLUTION?</p>
             <div class="li-platforms" align="center">
-                <ul class="list-inline text-center" id="menu" style="margin: 0px;padding: 12px 0px!important;">
-                    <li><i class="fa fa-cubes"></i> software</li>
-                    <li><i class="fa fa-laptop"></i> hardware</li>
-                    <li><i class="fa fa-mobile"></i> mobile apps</li>
-                    <li><i class="fa fa-wifi"></i> IoT</li>
-                    <li><i class="fa fa-database"></i> Big Data</li>
+                <ul class="list-inline text-center" id="menu" style="margin: 0px;">
+                    <li title="Software"><i class="fa fa-cubes"></i> <span class="hidden-xs">software</span></li>
+                    <li title="Hardware"><i class="fa fa-laptop"></i> <span class="hidden-xs">hardware</span></li>
+                    <li title="Mobile Apps"><i class="fa fa-mobile"></i> <span class="hidden-xs">mobile apps</span></li>
+                    <li title="IoT"><i class="fa fa-wifi"></i> <span class="hidden-xs">IoT</span></li>
+                    <li title="Big Data"><i class="fa fa-database"></i> <span class="hidden-xs">big data</span></li>
                 </ul>
             </div>
-            <h4 class="foot-text" align="center" style="padding:15px 40px; line-height: 30px;">At the
-                Asia-Pacific Regional Finals, stand to win a trip to Barcelona for the Global Mobile Challenge Finals during the
-                Mobile World Congress 2017
+            <h4 class="foot-text">
+                At the Asia-Pacific Regional Finals, stand to win a trip to Barcelona for the Global Mobile Challenge Finals during the Mobile World Congress 2017
             </h4>
         </div>
     </section>
@@ -235,14 +234,9 @@
             <p class="custom section-head-text thick font-orange" style="margin-top:-20px;"><i class="fa fa-clock-o"></i> TIMELINE<p />
 
             <div class="embed-responsive embed-responsive-16by9" id="timeline_player">
-              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zKA0GUJ3E2g?rel=0" allowfullscreen></iframe> -->
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qJ1RHcNSMO0?rel=0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qJ1RHcNSMO0?rel=0" allowfullscreen></iframe> -->
             </div>
-
-            <!-- <p align="center" class="black-font">
-                <iframe width="700" height="400" src="https://www.youtube.com/embed/zKA0GUJ3E2g" frameborder="0"
-                        allowfullscreen></iframe>
-            </p> -->
             
             <br />
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#timelineModal">
@@ -260,47 +254,47 @@
 
             <div class="row">
 
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p1.jpg" class="swipebox">
                         <img src="images/portfolio/p1.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p2.jpg" class="swipebox">
                         <img src="images/portfolio/p2.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p3.jpg" class="swipebox">
                         <img src="images/portfolio/p3.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p4.jpg" class="swipebox">
                         <img src="images/portfolio/p4.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p5.jpg" class="swipebox">
                         <img src="images/portfolio/p5.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p6.jpg" class="swipebox">
                         <img src="images/portfolio/p6.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p7.jpg" class="swipebox">
                         <img src="images/portfolio/p7.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p8.jpg" class="swipebox">
                         <img src="images/portfolio/p8.jpg">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 thumb">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 thumb">
                     <a rel="gallery-1" href="images/portfolio/p9.jpg" class="swipebox">
                         <img src="images/portfolio/p9.jpg">
                     </a>
@@ -504,12 +498,12 @@
         </div>
     </div>
 
-    <!-- <nav class="navbar navbar-default navbar-custom-footer navbar-static-bottom">
+    <nav class="navbar navbar-default navbar-custom-footer navbar-static-bottom">
         <div class="container" style="padding-top: 18px;">
-            <p class="pull-left"><strong>CONTACT US | info@mobile-asia.com</strong></p>
-            <p class="pull-right"><strong>Copyright &copy; 2016 MCAP - All Rights Reserved.</strong></p>
+            <p class="pull-left">CONTACT US: info@mobile-asia.com</p>
+            <p class="pull-right">&copy; 2016 MCAP - All Rights Reserved.</p>
         </div>
-    </nav> -->
+    </nav>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -520,8 +514,12 @@
 
     <script>
         $(function() {
-            $('.nav a').on('click', function(){
-                $('.navbar-toggle').click()
+            $('.nav a').on('click', function(e){
+                $('.navbar-toggle').click();
+                var $this = $(this);
+                if (!$this.hasClass('active')) {
+                    $this.addClass('active');
+                }
             });
             $( '.swipebox' ).swipebox();
         });
